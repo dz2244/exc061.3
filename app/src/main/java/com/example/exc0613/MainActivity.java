@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import java.text.BreakIterator;
 
 public class MainActivity extends AppCompatActivity {
     Button btn;
@@ -24,5 +23,7 @@ public class MainActivity extends AppCompatActivity {
     public void ace(View view) {
         counter += 1 ;
         text369.setText("This is a click number:" + counter);
+        if (counter == 6)
+            counter = 0 ;
     }
 }
