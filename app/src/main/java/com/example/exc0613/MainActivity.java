@@ -2,6 +2,7 @@ package com.example.exc0613;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         text369 = findViewById(R.id.text369);    }
     int counter = 0 ;
     public void ace(View view) {
+        text369.setTextColor(Color.BLUE);
         counter += 1 ;
         text369.setText("This is a click number:" + counter);
         if (counter == 6)
